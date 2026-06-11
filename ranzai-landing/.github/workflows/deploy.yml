@@ -20,7 +20,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: app/frontend
+        working-directory: frontend
 
     steps:
       - name: Checkout
@@ -46,7 +46,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: app/frontend/build
+          path: frontend/build
 
   deploy:
     runs-on: ubuntu-latest
